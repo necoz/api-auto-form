@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RD Form - Jquery & Bootstrap</title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/rdform.css" />    
+    
+	<!-- <link rel="stylesheet" type="text/css" href="css/jasmine/jasmine.css" />-->
+	
+  </head>
+  <body>
+	
+	<div class="container">
+        <ul class="options">
+            <li><a data-toggle="modal" href="javascript:;" class="btn btn-primary btn-lg btn-block">Div opção 01</a></li>
+            <li><a data-toggle="modal" href="javascript:;" class="btn btn-primary btn-lg btn-block">Div opção 02</a></li>
+            <li><a data-toggle="modal" href="javascript:;" class="btn btn-primary btn-lg btn-block">Div opção 03</a></li>            
+            <li><a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg btn-block" data-backdrop="static">Quero receber materiais por email</a></li>
+        </ul>
+	</div>
+	
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!--<script type="text/javascript" src="js/jasmine/jasmine.js"></script>	
+	<script type="text/javascript" src="js/jasmine/jasmine-html.js"></script>
+	<script type="text/javascript" src="js/jasmine/boot.js"></script>	
+	<script type="text/javascript" src="js/jasmine/jasmine-jquery.js"></script>	-->    
+	<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>	
+	<script type="text/javascript" src="js/rdform.js"></script>	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			options = { 
+				'token':'62bb61431348e22850828a5829c4373faafe29c1', 
+				'secret':'51a266c2844ccd5cac83d88de88d82d05358aa51', 
+				'modal':true, 
+				'fields':{ 
+					'estado':['São Paulo', 'Santa Catarina'], 
+					'nível':['Iniciante','Ninja'] 
+				} 
+			}			
+			$('#rdForm').formrd(options); 
+		});
+	</script>	
+  </body>
+</html>
