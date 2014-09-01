@@ -15,16 +15,16 @@
 
 
 <b>RUNNING</b>
-- Create an array of Options:
-	options = { 
-		'token':'62bb61431348e228', 
-		'secret':'51a266c2844ccd5', 
-		'modal':true, 
-		'fields':{ 
-			'text_example': '',
-			'select_example':['A','B','C','D']
-		}
-	}
-
+- Create an array:<br />
+	options = { <br />
+		'token':'0000000xxxx000xxxx0000',<br /> 
+		'secret':'000000xxxx000xxxx0000', <br />
+		'modal':true, <br />
+		'fields':{ <br />
+			'state_text': ['California','Ohio'],<br />
+			'level_select':['1','2']<br />
+		}<br />
+	}<br />
+			
 <b>TEST</b>	
 The tests were performed using the framework Jasmine using Grunt Server Task
