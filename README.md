@@ -1,7 +1,7 @@
-Dynamic Form Plugin - jQuery & Bootstrap
-Extras - Sending data via ajax for a jSON API
+<b>Dynamic Form Plugin - jQuery & Bootstrap</b>
+<br />Extras - Sending data via ajax for a jSON API
 	
-===== INSTALL ===== 
+<b>INSTALL</b>
 - Copy the file rdform.js to your JS folder;
 - Copy the file rdform.css to your CSS folder;
 - Link your JS and CSS into your HTML:
@@ -9,12 +9,12 @@ Extras - Sending data via ajax for a jSON API
 	<link rel="stylesheet" type="text/css" href="css/rdform.css" />
 
 
-===== HOW TO USE ===== 
+<b>HOW TO USE</b> 
 - Make the plugin call:
 	$('#rdForm').formrd(options);
 
 
-===== RUNNING =====
+<b>RUNNING</b>
 - Create an array of Options:
 	options = { 
 		'token':'62bb61431348e228', 
@@ -26,5 +26,5 @@ Extras - Sending data via ajax for a jSON API
 		}
 	}
 
-===== TEST =====	
+<b>TEST</b>	
 The tests were performed using the framework Jasmine using Grunt Server Task
